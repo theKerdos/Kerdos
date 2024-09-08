@@ -1,13 +1,28 @@
-import React from 'react'
+// app/components/Loading.js
+'use client'; // This is a client-side component
+
+import './Loading.css'
+import { useEffect, useState } from 'react';
 
 const Loading = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate loading timeout (e.g., 3 seconds)
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 3000); // Adjust the time as needed
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (!isLoading) return null;
+
   return (
-    <div className="flex justify-center items-center h-screen">
-      <div className="spinner-border animate-spin inline-block w-8 h-8 border-4 rounded-full" role="status">
-        <span className="visually-hidden">Loading...</span>
-      </div>
+    <div className="loading-container">
+      <h1 className='loading-text'>Loading...</h1>
     </div>
-  )
-}
+  );
+};
 
 export default Loading;

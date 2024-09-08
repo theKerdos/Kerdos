@@ -14,14 +14,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-      <link rel="icon" href="/kerdoslogo2.png"/>
+      <link rel="icon" href="./kerdosicon.ico"/>
       </head>
       <body>
-    <div>
-      <Suspense fallback={<Loading />}>
-        <main>{children}</main>
-      </Suspense>
-    </div>
+        <Suspense fallback={<Loading/>}>{children}</Suspense>
+    
+    
     </body>
     </html>
   );

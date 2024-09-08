@@ -1,0 +1,32 @@
+/* Center the loading text */
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black; /* Adjust background if necessary */
+  }
+  
+  .loading-text {
+    font-size: 30px;
+    color: #aaa; /* Base text color in gray */
+    position: relative;
+    background: linear-gradient(90deg, #aaa 0%, #aaa 40%, #fff 50%, #aaa 60%, #aaa 100%);
+    background-size: 200% 100%; /* Moves gradient smoothly across the text */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent; /* Makes text transparent except for background */
+    animation: highlight 5s infinite linear; /* Animate the highlight */
+  }
+  
+  /* Keyframes for the highlight animation */
+  @keyframes highlight {
+    0% {
+      background-position: 200% 0; /* Start the gradient from the right */
+    }
+    100% {
+      background-position: -200% 0; /* Move the gradient to the left */
+    }
+  }
+  
