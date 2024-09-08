@@ -34,9 +34,9 @@ export default function Home() {
       <div className="lg:w-8/12 pl-0 pr-0 text-center justify-center m-auto mt-8 md:pl-1 md:pr-1 items-center text-[22px] w-11/12 text-neutral-300 font-normal">ENGINEERING POWERFUL DIGITAL EMPIRES WHERE EVERY LINE OF CODE DRIVES DOMINANCE, WEALTH AND AUTHORITY</div>
     </div>
 
-    <div className="flex justify-center text-center flex-warp">
-      <div className="text-[16px] lg:w-30 sm:mt-6 mt-4 font-light pl-0 pr-0 md:pl-1 md:pr-1 text-zinc-400">
-      HELPING STARTUPS AND ONLINE BUSINESSes BUILD THEIR FOUNDATION⬇️</div>
+    <div className="flex justify-center text-center">
+      <div className="text-[16px] lg:w-30 sm:mt-6 mt-3 font-light items-center text-zinc-400">
+      HELPING STARTUPS AND ONLINE BUSINESSES BUILD THEIR FOUNDATION⬇️</div>
     </div>
     <HorizontalSlider/>
     <About/>
