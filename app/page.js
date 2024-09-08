@@ -30,12 +30,12 @@ export default function Home() {
     <button className="bg-white text-black rounded-[10px] p-3 font-medium transition-all active:bg-slate-400 active:transition-all">Book a call</button>
     </Link>
     </div>
-    <div className="flex justify-center text-center items-start">
-      <div className="lg:w-8/12 pl-0 pr-0 text-center justify-center m-auto mt-8 md:pl-1 md:pr-1 items-center text-[22px] w-11/12 text-neutral-300 font-normal">ENGINEERING POWERFUL DIGITAL EMPIRES WHERE EVERY LINE OF CODE DRIVES DOMINANCE, WEALTH AND AUTHORITY</div>
+    <div className="flex justify-center ">
+      <div className="lg:w-8/12 sm:w-full pl-0 pr-0 text-center justify-center  mt-8  items-center text-[22px] w-11/12 text-neutral-300 font-normal">ENGINEERING POWERFUL DIGITAL EMPIRES WHERE EVERY LINE OF CODE DRIVES DOMINANCE, WEALTH AND AUTHORITY</div>
     </div>
 
     <div className="flex justify-center text-center">
-      <div className="text-[16px] lg:w-30 sm:mt-6 mt-3 font-light items-center text-zinc-400">
+      <div className="text-[16px] lg:w-30 sm:mt-6 mt-3 mr-1 ml-1 font-light items-center text-zinc-400">
       HELPING STARTUPS AND ONLINE BUSINESSES BUILD THEIR FOUNDATION⬇️</div>
     </div>
     <HorizontalSlider/>
