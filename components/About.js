@@ -10,7 +10,9 @@ const About = () => {
         </Link>
       </div>
       <div>
+        <Link href="https://cal.com/thekerdos">
         Contact
+        </Link>
       </div>
     </div>
   )
